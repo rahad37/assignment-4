@@ -140,8 +140,7 @@
         }
            document.getElementById("total-bill").innerText = '$' + ticketTotal;
            totalCalculation();
-       }
-           
+       }        
 // ===========================================================================================
         function totalCalculation(){
            const firstClassTicketCount = getInputValue('firstClass');
@@ -156,7 +155,7 @@
            const finalAmount = totalPrice + tax;
            document.getElementById("final-amount").innerText = '$' + finalAmount;
         }
-
+// =========================================================================================
         function getInputValue(ticket){
             const ticketInput =  document.getElementById(ticket + "-Value");
             const ticketDigit = parseFloat(ticketInput.value);
